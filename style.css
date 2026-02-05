@@ -139,11 +139,7 @@ span#preco2 {
     padding-right: 10px;
 }
 
-a {
-    text-decoration: none;
-}
-
-a > #btn:hover {
+#btn:hover {
     background-color: var(--Green-700);
     cursor: pointer;
 }
