@@ -33,38 +33,38 @@
 }
 
 body {
-  height: 100vh;
-  width: 100vw;
+  height: 100dvh;
+  width: 100dvw;
+  padding: 1.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f3eae3;
-  font-size: 14px;
+  background-color: var(--Cream);
+  font-size: 0.875rem;
 }
 
-div#card {
+div.card {
   height: auto;
   width: 21.875rem;
   background-color: var(--White);
   border-radius: 12px;
   overflow: hidden;
-
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
 }
 
-div#imagem {
+div.imagem {
   height: 21.375rem;
   background-image: url(images/image-product-mobile.jpg);
   background-size: cover;
 }
 
-section#content {
-  margin: 2rem;
+section.content {
+  width: 17.75rem;
+  padding: 2rem;
 }
 
-span#titulo {
+span.titulo {
   font-family: var(--font2);
-  font-size: 0.875rem;
   color: var(--Grey);
 }
 
@@ -79,65 +79,62 @@ h1 {
 p {
   line-height: 1.5rem;
   font-family: var(--font2);
-  font-size: 0.875rem;
   color: var(--Grey);
 }
 
-div#preco {
+div.preco {
   display: flex;
   padding: 1.5rem 0;
   align-items: center;
   gap: 1rem;
 }
 
-span#preco1 {
+span.preco_new {
   font-family: var(--font1);
   color: var(--Green-500);
   font-size: 1.8rem;
   font-weight: 700;
 }
 
-span#preco2 {
+span.preco_old {
   font-family: var(--font2);
-  font-size: 0.875rem;
   color: var(--Grey);
 }
 
-#btn {
+.btn {
   display: flex;
   height: 3.125rem;
   width: 100%;
   justify-content: center;
   align-items: center;
   background-color: var(--Green-500);
-  font-size: 0.875rem;
   color: var(--White);
   border: none;
   border-radius: 10px;
 }
 
-#btn > img {
+.btn > img {
   padding-right: 10px;
 }
 
-#btn:hover {
+.btn:hover {
   background-color: var(--Green-700);
   cursor: pointer;
 }
-@media screen and (min-width: 800px) {
-  div#card {
+@media screen and (min-width: 48rem) {
+  div.card {
     height: 28rem;
     width: 40rem;
     display: flex;
   }
 
-  div#imagem {
+  div.imagem {
     height: 100%;
     width: 50%;
     background-image: url(images/image-product-desktop.jpg);
   }
 
-  section#content {
-    width: 40%;
+  section.content {
+    width: 50%;
   }
 }
